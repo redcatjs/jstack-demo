@@ -1,5 +1,5 @@
 {
-    "name": "jo/jstack-tour.dev",
+    "name": "redcatjs/jstack-demo",
     "repositories": [
         {
             "type": "composer",
