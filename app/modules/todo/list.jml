@@ -1,0 +1,65 @@
+<table style="width: 100%;">
+	<thead>
+		<th>task n°</th>
+		<th>name</th>
+		<th>day</th>
+		<th>done</th>
+		<th></th>
+	</thead>
+	<tbody>
+		<tr j-for="(i, id, task) in tasks" :data-id="{{id}}">
+			<td>
+				<a j-href="todo/{{id}}">{{i}}</a>
+			</td>
+			<td>
+				<a j-href="todo/{{id}}">{{task.name}}</a>
+			</td>
+			<td>
+				<input type="text" :name="tasks.{{id}}.day" class="datepicker">
+			</td>
+			<td>
+				<a j-href="todo/{{id}}">{{task.done?'ok':''}}</a>
+			</td>
+			<td>
+				<a href="javascript:;" j-on-click="deleteTask">x</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="addtask">
+	<form j-name="newTask" j-on-submit="createTask">
+		<div>
+			<label>name</label>
+			<input type="text" name="name">
+		</div>
+		<div>
+			<label>description</label>
+			<textarea name="description"></textarea>
+		</div>
+		<div>
+			<label>day</label>
+			<input type="text" name="day" class="datepicker">
+		</div>
+		<div>
+			<label>done</label>
+			<input type="checkbox" name="done" value="1">
+		</div>
+		<div>
+			<button type="submit">add task</button>
+		</div>
+	</form>
+</div>
+
+<style>
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+.addtask{
+	margin-top: 2em;
+}
+</style>

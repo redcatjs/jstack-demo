@@ -1,0 +1,19 @@
+{
+    "name": "jo/jstack-tour.dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "authors": [
+        {
+            "name": "jo",
+            "email": "jo@surikat.pro"
+        }
+    ],
+    "require": {
+        "bower-asset/jstack": "@dev",
+        "bower-asset/jquery-ui": "^1.12"
+    }
+}

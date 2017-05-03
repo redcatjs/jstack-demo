@@ -1,0 +1,39 @@
+<h1>{{task.name}}</h1>
+
+<hoover
+	j-data-width="232px"
+	j-data-height="157px"
+	j-data-timing="0.4s"
+	j-data-background-color="{{bezierColor}}"
+	j-data-bezier--points="0.01,0.63,0.21,-0.64"
+	j-data-bezier--timing="0s"
+>
+	<img src="img/thumb2.jpg">
+	<div class="description" style="background-color:#fff;">
+		<center>{{task.name}}</center>
+	</div>
+</hoover>
+
+
+<form j-name="task" j-on-submit="createTask">
+	<div>
+		<label>name</label>
+		<input type="text" name="name">
+	</div>
+	<div>
+		<label>description</label>
+		<textarea name="description"></textarea>
+	</div>
+	<div>
+		<label>day</label>
+		<input type="text" name="day">
+		
+		<template j-if=" task.day==today ">
+			This is today !
+		</template>
+	</div>
+	<div>
+		<label>done</label>
+		<input type="checkbox" name="done" value="1">
+	</div>
+</form>
