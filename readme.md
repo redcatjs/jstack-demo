@@ -1,4 +1,4 @@
-    git@github.com:redcatjs/jstack-demo.git jstack-demo.dev
+    git clone git@github.com:redcatjs/jstack-demo.git jstack-demo.dev
 
     cd jstack-demo.dev
 
