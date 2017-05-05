@@ -14,6 +14,7 @@
     ],
     "require": {
         "bower-asset/jstack": "@dev",
-        "bower-asset/jquery-ui": "^1.12"
+        "bower-asset/jquery-ui": "^1.12",
+        "bower-asset/requirejs": "^2.3"
     }
 }

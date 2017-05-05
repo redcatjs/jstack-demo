@@ -1,3 +1,5 @@
-$js.module(class extends jstack.Component {
-	templateUrl = 'modules/error/404';
-});
+define([],function(){ return class extends jstack.Component {
+	templateUrl(){
+		return 'modules/error/404';
+	}
+};});

@@ -1,14 +1,10 @@
-$js.module(class extends jstack.Component {
+define(['jquery-ui'],function(){ return class extends jstack.Component {
 	
 	templateUrl(){
 		return 'modules/todo/list';
 	}
 	
-	dependencies(){
-		return ['jquery-ui'];
-	}
-	
-	dependenciesData(){
+	getData(){
 		return [
 			$.getJSON('data/controller.php?method=load'),
 		];
@@ -73,4 +69,4 @@ $js.module(class extends jstack.Component {
 			dataType: 'json',
 		});
 	}
-});
+};});

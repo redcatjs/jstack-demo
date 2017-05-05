@@ -1,16 +1,10 @@
-$js.module(class extends jstack.Component{
+define(['app/directive/hoover'],function(){ return class extends jstack.Component{
 	
 	templateUrl(){
 		return 'modules/todo/item';
 	}
-	
-	dependencies(){
-		return [
-			'app/directive/hoover',
-		];
-	}
 
-	dependenciesData(){
+	getData(){
 		let id = this.route.params[0];
 		this.data.id = id;
 		return [
@@ -31,4 +25,4 @@ $js.module(class extends jstack.Component{
 	domReady(){
 		
 	}
-});
+};});
