@@ -1,9 +1,3 @@
-jstack.directive('hoover', 'directive/hoover' );
-
-//jstack.on('load','.toto',function(){
-	//$(this).text('OK');
-//});
-
 jstack.config.templatesPath = 'app/';
 jstack.config.controllersPath = 'app/';
 
