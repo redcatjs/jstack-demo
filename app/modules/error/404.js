@@ -1,3 +1,3 @@
-export default class extends jstack.Component {
+$js.module(class extends jstack.Component {
 	templateUrl = 'modules/error/404';
-};
+});

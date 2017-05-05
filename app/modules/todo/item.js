@@ -1,8 +1,14 @@
-export default class extends jstack.Component{
+$js.module(class extends jstack.Component{
 	
-	templateUrl = 'modules/todo/item';
+	templateUrl(){
+		return 'modules/todo/item';
+	}
 	
-	dependencies = [];
+	dependencies(){
+		return [
+			'app/directive/hoover',
+		];
+	}
 
 	dependenciesData(){
 		let id = this.route.params[0];
@@ -25,4 +31,4 @@ export default class extends jstack.Component{
 	domReady(){
 		
 	}
-};
+});

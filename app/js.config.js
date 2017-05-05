@@ -1,16 +1,18 @@
 $js.config({
 	alias:{
-		jstack:'vendor/bower-asset/jstack/jstack',
-		jquery:'vendor/bower-asset/jquery/dist/jquery',
+		'jstack':'vendor/bower-asset/jstack/jstack',
+		'jquery':'vendor/bower-asset/jquery/dist/jquery',
 		'jquery-ui':'vendor/bower-asset/jquery-ui/jquery-ui',
-		hoover:'js/hoover',
+		'hoover':'js/hoover',
 		'jstack.hoover':'js/component.hoover',
 	},
 	dependencies:{
-		jstack:['jquery'],
+		'app/app':['jstack'],
+		
+		'jstack':['jquery'],
 		'jquery-ui':['jquery'],
 		
-		hoover:['jquery'],
+		'hoover':['jquery'],
 		'jstack.hoover':['hoover'],
 	}
 });

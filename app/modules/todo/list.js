@@ -1,12 +1,18 @@
-export default class extends jstack.Component {
+$js.module(class extends jstack.Component {
 	
-	templateUrl = 'modules/todo/list';
+	templateUrl(){
+		return 'modules/todo/list';
+	}
 	
-	dependencies = ['jquery-ui'];
+	dependencies(){
+		return ['jquery-ui'];
+	}
 	
-	dependenciesData = [
-		$.getJSON('data/controller.php?method=load'),
-	];
+	dependenciesData(){
+		return [
+			$.getJSON('data/controller.php?method=load'),
+		];
+	}
 	
 	setData(json){
 		this.data.tasks = json;
@@ -67,4 +73,4 @@ export default class extends jstack.Component {
 			dataType: 'json',
 		});
 	}
-};
+});

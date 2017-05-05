@@ -3,7 +3,3 @@
     cd jstack-demo.dev
 
     composer install
-
-    npm install
-
-    webpack --watch

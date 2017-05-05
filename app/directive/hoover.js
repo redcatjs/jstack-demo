@@ -498,7 +498,7 @@ export default function($el,options){
 };
 */
 
-export default class extends jstack.Component{
+jstack.directive('hoover',class extends jstack.Component{
 	domReady(){
 		const $el = this.element;
 		const defaultOptions = {
@@ -509,4 +509,4 @@ export default class extends jstack.Component{
 		const options = $.extend(true,defaultOptions,this.options);
 		$el.hoover(options);
 	}
-};
+});
