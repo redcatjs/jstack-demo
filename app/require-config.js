@@ -2,8 +2,7 @@
 	
 	const main = ['app/app'];
 	
-	//const dev = APP_DEV_MODE;
-	const dev = true;
+	const dev = APP_DEV_MODE;
 	
 	//alias map
 	const alias = {
@@ -16,7 +15,7 @@
 	
 	//combined dependencies
 	const combined = {
-		testalias: ['test', 'test2' ],
+		
 	};
 	
 	//dependencies map
