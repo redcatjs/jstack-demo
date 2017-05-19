@@ -1,4 +1,4 @@
-define(['app/directive/hoover'],function(){ return class extends jstack.Component{
+define(['hoover'],function(){ return class extends jstack.Component{
 	
 	templateUrl(){
 		return 'modules/todo/item';

@@ -1,3 +1,5 @@
+define(['jstack','hoover'],function(){
+
 jstack.config.templatesPath = 'app/';
 jstack.config.controllersPath = 'app/';
 
@@ -45,3 +47,6 @@ const router = new jstack.Router({
 });
 
 router.run();
+
+
+});

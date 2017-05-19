@@ -1,10 +1,5 @@
-/*
-*	Plugin Hoover
-*	by Thomas Rigal
-*	v 1.0 june 2015
-*
-*	www.thomas-rigal.com/hoover
-*/
+define(['jquery','jstack'], function($){
+	
 $.fn.hoover = function(params) {
 	return this.each(function(){
 		// paramètres par défaut
@@ -485,21 +480,9 @@ $.fn.hoover = function(params) {
 };
 
 
-//lighter old syntax, less powerfull but lighter and still valid
-/*
-export default function($el,options){
-	const defaultOptions = {
-		'effect' : 'roundBottom',        //L'effet choisi parmis 16 effets.
-		'timing' : '1s',			     //Le temps de l'animation
-		'ease'	 : 'easeInQuart',	     //L'accéleration de l'animation selon des courbes de bézier
-	};
-	options = $.extend(true,defaultOptions,options);
-	$el.hoover(options);
-};
-*/
-
-jstack.directive('hoover',class extends jstack.Component{
+return jstack.directive('hoover',class extends jstack.Component{
 	domReady(){
+		console.log('toto');
 		const $el = this.element;
 		const defaultOptions = {
 			'effect' : 'roundBottom',        //L'effet choisi parmis 16 effets.
@@ -509,4 +492,6 @@ jstack.directive('hoover',class extends jstack.Component{
 		const options = $.extend(true,defaultOptions,this.options);
 		$el.hoover(options);
 	}
+});
+
 });
