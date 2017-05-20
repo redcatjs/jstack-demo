@@ -1,4 +1,4 @@
-define(['hoover'],function(){ return class extends jstack.Component{
+export default class extends jstack.Component{
 	
 	templateUrl(){
 		return 'modules/todo/item';
@@ -25,4 +25,4 @@ define(['hoover'],function(){ return class extends jstack.Component{
 	domReady(){
 		
 	}
-};});
+};

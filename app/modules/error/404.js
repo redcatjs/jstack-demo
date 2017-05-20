@@ -1,5 +1,5 @@
-define([],function(){ return class extends jstack.Component {
+export default class extends jstack.Component {
 	templateUrl(){
 		return 'modules/error/404';
 	}
-};});
+};

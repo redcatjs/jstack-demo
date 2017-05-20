@@ -1,4 +1,6 @@
-define(['jquery-ui'],function(){ return class extends jstack.Component {
+import 'jquery-ui';
+
+export default class extends jstack.Component {
 	
 	templateUrl(){
 		return 'modules/todo/list';
@@ -69,4 +71,4 @@ define(['jquery-ui'],function(){ return class extends jstack.Component {
 			dataType: 'json',
 		});
 	}
-};});
+};

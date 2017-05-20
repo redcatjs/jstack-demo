@@ -1,4 +1,4 @@
-define(['jquery','jstack'], function($){
+import 'jstack';
 	
 $.fn.hoover = function(params) {
 	return this.each(function(){
@@ -480,7 +480,7 @@ $.fn.hoover = function(params) {
 };
 
 
-return jstack.directive('hoover',class extends jstack.Component{
+export default jstack.directive('hoover',class extends jstack.Component{
 	domReady(){
 		console.log('toto');
 		const $el = this.element;
@@ -492,6 +492,4 @@ return jstack.directive('hoover',class extends jstack.Component{
 		const options = $.extend(true,defaultOptions,this.options);
 		$el.hoover(options);
 	}
-});
-
 });

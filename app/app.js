@@ -1,4 +1,5 @@
-define(['jstack','hoover'],function(){
+import 'jstack';
+import 'directive/hoover';
 
 jstack.config.templatesPath = 'app/';
 jstack.config.controllersPath = 'app/';
@@ -18,7 +19,7 @@ const router = new jstack.Router({
 	routes: [
 		{
 			path: '',
-			component: 'modules/home/home',
+			component: require('modules/home/home').default,
 			/* jstack feature in dev
 			children: [
 				{
@@ -31,22 +32,19 @@ const router = new jstack.Router({
 		
 		{
 			path: 'todo',
-			component: 'modules/todo/list',
+			component: require('modules/todo/list').default,
 		},
 		
 		{
 			path: 'todo/:id',
-			component: 'modules/todo/item',
+			component: require('modules/todo/item').default,
 		},
 		
 		{
 			path: '*',
-			component: 'modules/error/404',
+			component: require('modules/error/404').default,
 		},
 	]
 });
 
 router.run();
-
-
-});

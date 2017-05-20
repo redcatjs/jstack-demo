@@ -1,0 +1,53 @@
+{
+  "name": "jstack-demo",
+  "version": "1.0.0",
+  "description": "git clone git@github.com:redcatjs/jstack-demo.git jstack-demo.dev",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redcatjs/jstack-demo.git"
+  },
+  "keywords": [
+    "jstack",
+    "demo",
+    "jquery",
+    "mvc"
+  ],
+  "author": "Jo <jo@redcat.ninja> (https://redcat.ninja)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redcatjs/jstack-demo/issues"
+  },
+  "homepage": "https://github.com/redcatjs/jstack-demo#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1",
+    "jstack": "^12.10.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.23.0",
+    "css-loader": "^0.28.0",
+    "exports-loader": "^0.6.4",
+    "expose-loader": "^0.7.3",
+    "html-loader": "^0.4.5",
+    "imports-loader": "^0.7.1",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1",
+    "webpack-bundle-analyzer": "^2.7.0",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
