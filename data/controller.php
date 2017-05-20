@@ -6,7 +6,7 @@ switch($_REQUEST['method'] ?? null){
 		$result = json_decode( file_get_contents($file) );
 	break;
 	case 'store':
-		$data = $_REQUEST['data'];
+		$data = (array)$_REQUEST['data'];
 		$result = file_put_contents($file, json_encode($data, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT) );
 	break;
 	default:
