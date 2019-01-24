@@ -1,3 +1,5 @@
+**No longer actively maintained. I recommand you to take a look at [ReactJS](https://reactjs.org/)**
+
 Setup Repository
 
     git clone git@github.com:redcatjs/jstack-demo.git jstack-demo.dev
